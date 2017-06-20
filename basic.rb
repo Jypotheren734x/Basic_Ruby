@@ -2,7 +2,7 @@ def onlyInAmerica(string)
   string + "Only in America!"
 end
 
-puts onlyInAmerica("Guns, ")
+puts onlyInAmerica "Guns, "
 
 def maxValue(array)
   largest = 0;
@@ -14,13 +14,15 @@ def maxValue(array)
   largest
 end
 
+puts maxValue [100,10,1000,-1000]
+
 def combine(ar1, ar2)
   object = {}
   ar1.each_with_index {|key,index | object[key] = ar2[index]}
   object
 end
 
-puts combine(["Key1","Key2", "Key3"],["1","2","3"])
+puts combine [:Key1,:Key2, :Key3],["1","2","3"]
 
 def fizzBuzz()
   for i in 0...101
