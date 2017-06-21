@@ -23,22 +23,22 @@ calc.divide 5,5
 class Elevator
   def initialize()
     @floor = 1
-    cheery_greating
+    cheery_greeting
   end
   def go_up
     if @floor+1<=12
       @floor += 1
-      cheery_greating
+      cheery_greeting
     end
   end
   def go_down
     if @floor-1>0
       @floor -= 1
-      cheery_greating
+      cheery_greeting
     end
   end
-  def cheery_greating
-    puts "You are at floor " + @floor.to_s
+  def cheery_greeting
+    puts 'Welcome to floor ' + @floor.to_s
   end
 end
 
@@ -48,6 +48,7 @@ elevator.go_up
 elevator.go_up
 elevator.go_up
 elevator.go_up
+
 elevator.go_down
 elevator.go_down
 elevator.go_down
