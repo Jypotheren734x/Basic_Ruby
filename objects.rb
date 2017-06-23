@@ -1,24 +1,25 @@
 class Calculator
-  def add(num1, num2)
+  def self.add(num1, num2)
     puts num1 + num2
   end
-  def subtract(num1,num2)
+
+  def self.subtract(num1, num2)
     puts num1 - num2
   end
-  def divide(num1, num2)
+
+  def self.divide(num1, num2)
     puts num1/num2
   end
-  def multiply(num1, num2)
+
+  def self.multiply(num1, num2)
     puts num1*num2
   end
 end
 
-calc = Calculator.new
-
-calc.add 5,5
-calc.subtract 5,5
-calc.multiply 5,5
-calc.divide 5,5
+Calculator.add 5, 5
+Calculator.subtract 5, 5
+Calculator.multiply 5, 5
+Calculator.divide 5, 5
 
 class Elevator
   def initialize()
